@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.samirtalbi.maratoons">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logom"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logover2_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".welcome"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name=".MainActivity"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".parametre"
+            android:parentActivityName=".parametre"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".ingame"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".meilleurescore"
+            android:parentActivityName=".meilleurescore"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".mode"
+            android:parentActivityName=".mode"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".vsbot"
+            android:parentActivityName=".vsbot"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".choixmodeia"
+            android:parentActivityName=".choixmodeia"
+            android:screenOrientation="portrait"></activity>
+
+    </application>
+
+</manifest>
